@@ -74,7 +74,7 @@
     background-color: gold;
     border-bottom-left-radius: 110px;  /* 100px of height + 10px of border */
     border-bottom-right-radius: 110px; /* 100px of height + 10px of border */
-    
+    animation-fill-mode: forwards;
 }
 
 #animation {
