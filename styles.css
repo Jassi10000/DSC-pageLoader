@@ -1,0 +1,98 @@
+/* $size:100px;
+
+.parent{
+  position:relative;
+  width:$size;
+  height:$size;
+  border-radius:50%;
+  background-color:black;
+}
+.parent div{
+  width: 100px;
+  height: 100px; 
+}
+.half{
+  border-radius: 50%;
+  width:50%;
+  position:absolute; 
+   border-bottom-right-radius: $size * 2;
+  border-top-right-radius: $size * 2;
+  left:50%;
+  background-color: yellow;
+}
+.red{
+  background-color: red;
+}
+.full{
+  position:absolute;
+ width:100%;
+ border-radius:50%;
+ transform:rotateY(-90deg)
+}
+.rotate {
+  animation: 1s linear infinite rotate;
+ 
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(90deg)
+  }
+  to {
+    transform: rotateY(0deg)
+  }
+}
+ */
+
+
+/* **************************** upper circle neeche ************************************** */
+#container {
+  width: 100px;
+  height: 100px;
+  display: inline;
+}
+.main-circle{
+  width: 200px;
+    height: 100px; /* as the half of the width */
+    background-color: black;
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+   
+}
+.u-semicircle {
+  width: 200px;
+    height: 100px; /* as the half of the width */
+    background-color: red;
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    perspective: 300px;
+    animation-direction: forward;
+  }
+.b-semicircle {
+  width: 200px;
+    height: 100px; /* as the half of the width */
+    background-color: gold;
+    border-bottom-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-bottom-right-radius: 110px; /* 100px of height + 10px of border */
+    
+}
+
+#animation {
+  animation: anim 1s linear 0s alternate;
+  transform-origin: 50% 100%;
+}
+
+@keyframes anim {
+  from {transform: rotateX(0deg);}
+  to {transform: rotateX(-180deg);}
+}
+
+
+
+
+
+
+/* ***************************************************neeche wala circle upar**************************************************** */
+
+
+
