@@ -4,11 +4,15 @@ body{
     background-color:#262626;
 }
 
+.loader-container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
 .loader{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
+    transform: rotate(45deg);
     width: 100px;
     height: 100px;
     background: #262626;
